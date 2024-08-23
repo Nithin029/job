@@ -28,7 +28,7 @@ username= os.getenv("NEO4J_USERNAME")
 password= os.getenv("NEO4J_PASSWORD")
 together = Together(api_key=TOGETHER_API_KEY)
 driver = GraphDatabase.driver(uri, auth=(username, password))
-df = pd.read_csv('DB_search_clean.csv')
+#df = pd.read_csv('DB_search_clean.csv')
 neo4j_graph = Neo4jGraph(url=uri, username=username, password=password)
 dimension=768
 client = openai.OpenAI(
